@@ -27,7 +27,7 @@ Page({
   onShareAppMessage() {
     // 返回自定义分享信息
     return {
-      title: 'My App',
+      title: 'Bike Index App',
       desc: 'My App description',
       path: 'pages/index/index',
     };
@@ -39,5 +39,11 @@ Page({
         url: '../bikestats/bikestats'
       })
     },
+    searchBikes(event) {
+      console.info('loaded search bikes')
+      my.navigateTo({
+        url: '../searchbike/searchbike'
+      })
+    }
 
 });
