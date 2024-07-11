@@ -1,4 +1,9 @@
-#stats-btn {
+#stats-intro {
+  text-align: center;
+}
+
+
+#stats-button {
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 20px;
@@ -7,12 +12,4 @@
   align-items: center;
   align-self: center; /* Ensures the button is centered horizontally within the flexbox */
   width: auto; /* Ensures the button width covers only the text */
-}
-
-.srch{
-  margin-top: 100px;
-}
-
-#intro {
-  text-align: center;
 }

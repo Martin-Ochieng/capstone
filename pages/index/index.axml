@@ -1,5 +1,7 @@
 <view style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
   <text id="intro">Welcome to Bike Index</text>
   <button size="default" id="stats-btn" type="primary" onTap="seeStats">View Stats</button>
+
+  <button size="default" id="stats-btn" type="primary" onTap="searchBikes">Search Bikes</button>
 </view>
 

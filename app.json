@@ -2,9 +2,10 @@
   "subPackageBuildType": "shared",
   "pages": [
     "pages/index/index",
-    "pages/bikestats/bikestats"
+    "pages/bikestats/bikestats",
+    "pages/searchbike/searchbike"
   ],
   "window": {
-    "defaultTitle": "My App"
+    "defaultTitle": "My Bike Index"
   }
 }
