@@ -1,0 +1,10 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/index/index",
+    "pages/bikestats/bikestats"
+  ],
+  "window": {
+    "defaultTitle": "My App"
+  }
+}

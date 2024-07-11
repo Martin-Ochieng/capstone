@@ -1,0 +1,8 @@
+
+<view style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+  <text id="stats-intro"> Tell me where you are </text>
+  <text id="stats-intro"> I can tell you how many bikes are stolen per manufacturer</text>
+  <input id="orders-input" placeholder="Nairobi" value="{{inputValue}}" onBlur="getData" />
+  <button size="default" id="stats-button" type="primary" onTap="getStats">Get Stats</button>
+</view>
+  
