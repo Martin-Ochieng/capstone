@@ -1,3 +1,6 @@
+// Load environment variables from .env file
+require('dotenv').config();
+
 Page({
   data: {
     inputValue: '',
@@ -28,7 +31,7 @@ Page({
         location: this.data.inputValue, // Assuming inputValue is the location
         distance: 10,
         stolenness: 'stolen',
-        access_token: '2DwjP1sCIQKOK0ql5W-O6-QJMdnIM5C3ipJldkYE-uA'
+        access_token: process.env.ACCESS_TOKEN // Use the access token from .env
       };
 
       my.request({
@@ -39,7 +42,7 @@ Page({
           let result, content;
           if (res.status === 200) {
             result = 'Success';
-            content = 'Stolen Bike Stats for ' + input;
+            content = 'Bike Stats for ' + input;
 
             const bikes = res.data.bikes;
 
@@ -55,10 +58,11 @@ Page({
 
             // Add manufacturer counts to content
             for (const [manufacturer, count] of Object.entries(manufacturerCount)) {
-              content += `\n${manufacturer}: ${count} bike(s)`;
+              
+              content += `\n${manufacturer}: ${count} ${count > 1 ? 'bikes' : 'bike'}`;
             }
 
-            console.log(content); // Logging bikes if needed for debugging
+            console.log(bikes); // Logging bikes if needed for debugging
           } else {
             result = 'Fail';
             content = 'Error sending the request';
