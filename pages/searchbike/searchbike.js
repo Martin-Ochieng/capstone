@@ -40,7 +40,7 @@ Page({
           let result, content;
           if (res.status === 200) {
             result = 'Success';
-            content = 'Bike Stats for ' + input;
+            content = 'Bike Tags with Serial  ' + input;
 
             const bikes = res.data.bikes;
 
